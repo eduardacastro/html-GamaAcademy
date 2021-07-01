@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <title> Página para Exercícios HTML | Gama Academy</title>
+    <meta chaset="UTF-8" />
+    <meta name="description" content="Texto descritivo da página web" />
+    <meta name="author" content="Gama Academy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+
+<!-- Fim do Cabeçalho-->
+<img src="pepper.jpeg" alt="Pepper linda" title="Pepper pimentinha" />
+
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-level="main navigation">
+            <ul role="menu">
+                <li>
+                    <a href="#" role="menuitem">Home</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Quem Somos</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Contato</a>
+                </li>
+                <li>
+                    <a href="#" role="menuitem">Conteúdos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+
+<!-- Conteúdo principal-->
+<main role="main">
+    <!--Títulos em HTML-->
+
+    <!--Tabela-->
+    <table summary="A atividade realizada em cada Mês">
+
+        <caption>Tabela: Mês e atividade</caption>
+
+        <thead>
+            <tr>
+                <th abbr="Mês" scope="col">Mês da Atividade</th>
+                <th abbr="Atividade" scope="col">Nome da Atividade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th colspan="2" scope="row" >Janeiro</th>
+            </tr>
+            <tr>
+                <td>Fevereiro</td>
+                <td rowspan="2">Yoga</td>
+            </tr>
+            <tr>
+                <td>Março</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total de Atividades</td>
+                <td>2 Atividades</td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+    <section>
+        <h1>Terra</h1>
+        <p lang="en"><strong>Lorma</strong> jnjnjasjnjn jnsjsnjasn jnsjsnajas</p>
+
+        <h2>América do Sul</h2>
+        <p id="article-description">Lorma jnjnjasjnjn jnsjsnjasn jnsjsnajas</p>
+
+        <script type="text/javascript">
+
+            var paragrafo = document.getElementById("article-description");
+            
+            paragrafo.style.color="blue";
+
+            paragrafo.innerText = "Texto Mudou!";
+
+        </script>
+        
+        <h3>Brasil</h3>
+        <p>Lorma jnjnjasjnjn jnsjsnjasn jnsjsnajas</p>
+
+        <h4>São Paulo</h4>
+        <p>Lorma jnjnjasjnjn jnsjsnjasn jnsjsnajas</p>
+
+        <button aria-label="Acesse o site oficial para saber mais">Saber mais</button>
+
+        <div class="bloco-post" id="div1">
+            <img src="https://poltronanerd.com.br/wp-content/uploads/2020/04/baby-yoda.jpg" alt="baby yoda"
+                title="baby yoda" 
+                aria-labelledby="description-babyyoda"/>
+            
+            <p id="description-babyyoda">
+                Ele é muito fofo
+            </p>
+        </div>
+
+        <div class="bloco-post" id="div2">
+            <a href="https://google.com" tittle="site do google" target="_blank">
+                <img src="tapioca.jpg" />
+            </a>
+        </div>
+
+        <div class="bloco-post" id="div1">
+            <!--Vídeos-->
+            <video width="550" height="560" controls>
+                <source src="4.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+    </section>
+
+    <!-- Lista Desordenada -->
+    <ul type="circle">
+        <li> ITEM 1</li>
+        <li> ITEM 2</li>
+    </ul>
+
+    <!-- Lista Ordenada -->
+    <ol start="3" type="I">
+        <li> ITEM 1</li>
+        <li> ITEM 2</li>
+    </ol>
+
+    <!-- Lista de Definições -->
+    <dl>
+        <dt>Palavra 1</dt>
+        <dd>Explicação da palavra 1</dd>
+    </dl>
+
+
+    <a href="https://google.com" tittle="site do google" target="_blank">
+        Teste de Link
+    </a>
+
+    <p>
+        Estamos no curso de HTML e queremos
+
+        <a href="https://google.com" tittle="aprender mais">aprender mais!
+
+        </a>
+    </p>
+
+</main>
+<!--Fim do Conteúdo principal-->
+
+
+<body>
+    <main role="main">
+
+        <form action="#" method="POST">
+
+            <label for="campo1">Nome</label>
+            <input type="text" name="nome" id="campo1" />
+
+            <label for="campo2">Interesses de Estudo</label>
+            <select name="interesses" id="campo2">
+                <option value="1">Vendas</option>
+                <option value="2">Market</option>
+            </select>
+
+
+            <fieldset>
+                <legend>Interesses de Estudo</legend>
+               
+                <label for="campo31">Vendas</label>
+                <input type="radio" name="interesse2" value="1" id="campo31"/>
+
+                <label for="campo32">Marketing</label>
+                <input type="radio" name="interesse2" value="2" id="campo32" />
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Interesses de Estudo 2</legend>
+               
+                <label for="campo41">Vendas</label>
+                <input type="checkbox" name="interesse2" value="1" id="campo41"/>
+
+                <label for="campo42">Marketing</label>
+                <input type="checkbox" name="interesse2" value="2" id="campo42" />
+
+            </fieldset>
+            
+            <input type="submit" value="Enviar o formulário" />
+        </form>
+
+    </main>
+</body>
+
+<footer role="contentinfo">
+    &copy; 2021 Eduarda Guterres
+</footer>
+<!--Fim so Rodapé-->
+
+</html>
